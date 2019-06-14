@@ -10,7 +10,7 @@ Al desarrollar esta app le permitimos al usuario seguir utilizando estas opcione
 
 La app cifrará la contraseña que el usuario eliga y le mostrará su contraseña cifrada, para que pueda guardarla en un archivo, anotarla nuevamente en alguna libreta o post-it, para su rápido acceso. Así mismo, la app le permitirá descifrar la contraseña para que pueda usarla cuando sea necesario, ya sea para ingresar a algún sitio/app o para modificarla.
 
-Al cifrar la contraseña, el usuario tiene la opción de elegir un código específico para personalizar su cifrado. Este mismo código lo deberá utilizar para poder descifrar su contraseña cuando lo necesite. De este modo se brinda mayor seguridad durante el cifrado de la información.
+Al cifrar la contraseña, el usuario tiene la opción de elegir un código específico para personalizar su cifrado. Este mismo código lo deberá utilizar para poder descifrar su contraseña cuando lo necesite. De este modo se brinda mayor seguridad durante el cifrado de la información..
 
 
 Para acceder a esta app ingresa al siguiente link:

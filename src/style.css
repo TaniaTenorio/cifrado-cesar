@@ -3,7 +3,7 @@ body{
     background-color: #1abb9c;
 }
 .titulo{
-    font: size 80px;
+    font-size: 80px;
     text-align: center;
     font-family: "Quantico", sans-serif;
 }
