@@ -8,9 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quantico&display=swap" rel="stylesheet">
   </head>
 <body>
-    
         <h1 class="titulo">Descifrando...</h1>
-    
     <div class="text-box">
         <p>
         <label for="">Escribe tu contraseña cifrada:</label>
@@ -18,21 +16,23 @@
         </p>
         <p>
         <label for="">Código:</label>
-        <select name="codigo" id="codigo">
+        <select name="codigo2" id="codigo2">
             <option value="seleccionar" readonly>-Seleccionar</option>
-            <option value="centinela">Centinela</option>
-            <option value="adn">ADN</option>
-            <option value="amarillo">Amarillo</option>
+            <option value="2">Centinela</option>
+            <option value="4">ADN</option>
+            <option value="6">Amarillo</option>
         </select>
         </p>   
-        <p class="">
+        <p class="descifrar">
             <input type="button" value="DESCIFRAR" class="descifrar-button" id="descifrar-button">
         </p>
         <p>Tu contraseña es:</p>
-        <p><input type="text" name="contraseña-descifrada" id="contraseña-descifrada"></p>
+        <p id="contraseña-descifrada"></p>
     </div>
     <div class="regresar">
-            <a href=instrucciones.html><input type="button" value="REGRESAR" class="regresar-button"> </a>
+            <a href="instrucciones.html"><input type="button" value="REGRESAR" class="regresar-button"> </a>
     </div>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
