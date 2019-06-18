@@ -1,37 +1,47 @@
 window.cipher = {
-   encode: (password, codigo) => {
+   encode: (offset, string) => {
     //  let password="ABC";
     //  let codigo = 2;
-     let offset = parseInt(codigo);
-     let newPassword= "";
-      for(let i=0; i<password.length; i++){
-           let char = (password.charAt(i));
+      offset = parseInt(offset);
+     let newString= "";
+     string = string.toUpperCase(); 
+      for(let i=0; i<string.length; i++){
+           let char = (string.charAt(i));
           // console.log(char);
        let positionAscii = char.charCodeAt();
+       if(positionAscii === 32){
+         newString = newString + " ";
+       } else {
        let newPositionAscii = ((positionAscii-65+offset)%26 + 65);
         let newCharacter = String.fromCharCode(newPositionAscii);
       //   newPassword = newCharacter.concat();
-       newPassword = newPassword.concat(newCharacter);
+       newString = newString.concat(newCharacter);
       }
+    }
       //  document.write(newPassword); 
-       return newPassword;
+       return newString;
       // console.log(newPassword);   
       },
       // console.log(code("ABC",2));
       // document.write (code("ABC",2));
-  decode: (password,codigo) => {
-    let offset = parseInt(codigo);
-   let newPassword= "";
-   for(let i=0; i<password.length; i++){
-        let char = (password.charAt(i));
+  decode: (offset,string) => {
+     offset = parseInt(offset);
+   let newString= "";
+   string = string.toUpperCase();
+   for(let i=0; i<string.length; i++){
+        let char = (string.charAt(i));
        // console.log(char);
     let positionAscii = char.charCodeAt();
-    let newPositionAscii = ((positionAscii-65-offset)%26 + 65);
+    if(positionAscii === 32){
+      newString = newString + " ";
+    } else {
+    let newPositionAscii = ((positionAscii+65-offset)%26 + 65);
      let newCharacter = String.fromCharCode(newPositionAscii);
    //   newPassword = newCharacter.concat();
-    newPassword = newPassword.concat(newCharacter);
+    newString = newString.concat(newCharacter);
    }
+  }
    //  document.write(newPassword); 
-    return newPassword;    
-}
+    return newString;    
+  }
 };
