@@ -1,11 +1,11 @@
-let codedPassword = document.getElementById("contraseña-cifrada");
-let codigo2 = document.getElementById("codigo2");
+let codedPassword1 = document.getElementById("contraseña-cifrada");
+let codigo22 = document.getElementById("codigo2");
 let descifrar = document.getElementById("descifrar-button");
 let newCodedPassword = document.getElementById("contraseña-descifrada");
 
 descifrar.addEventListener("click", () => {
-            codedPassword = codedPassword.value;
-            codigo2=codigo2.value;
+            let codedPassword = codedPassword1.value;
+            let codigo2=codigo22.value;
             // console.log(codedPassword);
             // console.log(codigo2);
             let decodedPassword = window.cipher.decode(codigo2,codedPassword)
