@@ -2,11 +2,17 @@
 body{
     background-color: #1abb9c;
 }
-.titulo{
+header{
     font-size: 50px;
     text-align: center;
     font-family: "Quantico", sans-serif;
+    margin: 5vh;
 }
+h1{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    }
 .bienvenida{
     font-family: 'Share Tech Mono', monospace;
     width: 45%;
@@ -14,11 +20,7 @@ body{
     padding:0 15px;
     float: left;
 }
-.title{
-font-size: 2em;
-font-weight: bold;
-text-align: center;
-}
+
 .solucion{
     font-size: 1.25em;
     font-weight: bold;
@@ -81,10 +83,18 @@ text-align: center;
     margin: auto;
    
 }
+.pantalla-accion{
+    font-family: 'Share Tech Mono', monospace;
+}
 .cifrar{
     text-align: center;
-
 }
+select, option{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+    text-align: center;
+}
+
 .cifrar-button{
     background-color:#5f1854;
     font-size: 20px;
@@ -92,6 +102,7 @@ text-align: center;
     padding: 16px;
     border-radius: 4px;
     border: none;
+    font-family: 'Share Tech Mono', monospace;
 }
 .descifrar-button{
     background-color:#5f1854;
@@ -100,10 +111,11 @@ text-align: center;
     padding: 16px;
     border-radius: 4px;
     border: none;
+    font-family: 'Share Tech Mono', monospace;
 }
-/*Falta agregar class="cifrar" para poner los botones al centro */
 .regresar{
     text-align: center;
+    font-family: 'Share Tech Mono', monospace;
 }
 .cifrar-button:hover{
     background-color: #9d51aa;
@@ -131,16 +143,21 @@ text-align: center;
     font-family: "Quantico", sans-serif;
     font-size: 16px;
     color: #1CA421;
+    text-align: center;
+}
+.codigo{
+    margin: 0vh;
 }
 
 .regresar-button{
     background-color:#1abb9c;
-    font-size: 20px;
+    font-size: 28px;
     color: white;
     padding: 16px;
     border-radius: 4px;
     border: none;
     cursor: pointer;
+    font-family: 'Share Tech Mono', monospace;
 }
 .regresar-button:hover{
     background-color: #1abb9c;

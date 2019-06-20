@@ -10,14 +10,15 @@
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>Contraseña Segura</header>
+    <nav class="pantalla-accion">
         <h1 class="titulo" >Cifrando...</h1>
     <div class="text-box">
         <p>
             <label for="">Escribe tu contraseña:</label>
-            <input type="text" name="contraseña" id="contraseña" placeholder="Escribe aquí" class="input-contraseña">
+            <input type="text" name="contraseña" id="contraseña" placeholder="Aqui mero!" class="input-contraseña">
         </p>
-        <p>
-            <label for="">Código:</label>
+        <p class="codigo">Código:</p>
             <select name="codigo" id="codigo">
                 <option value="seleccionar" readonly>-Seleccionar-</option>
                 <option value="4">Mexa</option>
@@ -25,8 +26,7 @@
                 <option value="16">Godín</option>
                 <option value="32">Halcón</option>
                 <option value="64">UltraSecreto</option>
-            </select>
-        </p>   
+            </select>  
         <p class="cifrar">
             <input type="button" value="CIFRAR" class="cifrar-button" id="cifrar-button"> 
         </p>
@@ -36,6 +36,7 @@
     <div class="regresar">
             <a href="instrucciones.html"><input type="button" value="REGRESAR" class="regresar-button"> </a>
     </div>
+    </nav>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
 </body>

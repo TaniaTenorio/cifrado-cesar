@@ -43,7 +43,7 @@ window.cipher = {
     // if(positionAscii === 32){
     //   newString = newString + " ";
     } else if (positionAscii >= 97 && positionAscii <= 122){
-      let newPositionAsciiLowerCase = ((positionAscii-97)%26 -offset)+97;
+      let newPositionAsciiLowerCase = ((positionAscii-122-offset)%26+122);
       let newCharacerLowerCase = String.fromCharCode(newPositionAsciiLowerCase);
       newString = newString + newCharacerLowerCase;
     } else {

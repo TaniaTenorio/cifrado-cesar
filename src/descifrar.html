@@ -7,25 +7,26 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Quantico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding|Orbitron&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>Contraseña Segura</header>
+    <nav class="pantalla-accion">
         <h1 class="titulo">Descifrando...</h1>
     <div class="text-box">
         <p>
-        <label for="">Escribe tu contraseña cifrada:</label>
-        <input type="text" name="contraseña-cifrada" id="contraseña-cifrada" placeholder="Escribe aquí">
+            <label for="">Escribe tu contraseña cifrada:</label>
+            <input type="text" name="contraseña" id="contraseña-cifrada" placeholder="Aquí mero!" class="input-contraseña">
         </p>
-        <p>
-        <label for="">Código:</label>
-        <select name="codigo2" id="codigo2">
-            <option value="seleccionar" readonly>-Seleccionar</option>
-            <option value="4">Mexa</option>
-            <option value="8">ADN</option>
-            <option value="16">Godín</option>
-            <option value="32">Halcón</option>
-            <option value="64">UltraSecreto</option>
-        </select>
-        </p>   
+        <p class="codigo">Código:</p>
+            <select name="codigo2" id="codigo2">
+                <option value="seleccionar" readonly>-Seleccionar</option>
+                <option value="4">Mexa</option>
+                <option value="8">ADN</option>
+                <option value="16">Godín</option>
+                 <option value="32">Halcón</option>
+                <option value="64">UltraSecreto</option>
+            </select>  
         <p class="descifrar">
             <input type="button" value="DESCIFRAR" class="descifrar-button" id="descifrar-button">
         </p>
@@ -35,6 +36,7 @@
     <div class="regresar">
             <a href="instrucciones.html"><input type="button" value="REGRESAR" class="regresar-button"> </a>
     </div>
+    </nav>
     <script src="cipher.js"></script>
     <script src="index2.js"></script>
 </body>

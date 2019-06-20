@@ -50,7 +50,9 @@ describe('cipher', () => {
     // Hacker edition
     //
     // Si decides agregar soporte para minúsculas, escribe el test correspondiente.
-
+    it('denería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" con offset 33', () => {
+      assert.equal(cipher.decode(33,"hijklmnopqrstuvwxyzabcdefg"), "abcdefghijklmnopqrstuvwxyz");
+    })
     //
     // Hacker edition
     //
