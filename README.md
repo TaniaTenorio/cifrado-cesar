@@ -38,16 +38,4 @@ Es IMPORTANTE que el usuario utilice el mismo código con el que cifró cuando q
 Para acceder a esta app ingresa al siguiente link:
 [Contraseña Segura](https://taniatenorio.github.io/cifrado-cesar/src/index.html)
 
-
-
-
-Se utilzó la siguiente paleta de  colores (clave hexadecimal9:
-
-f7f7f7
-
-3b0944
-
-5f1854
-
-1abb9c
-![Color Palette](src/Images/Color_palette.png)
+![Pantalla de Bienvenida](src/Images/screenshot.png)

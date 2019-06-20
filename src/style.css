@@ -61,7 +61,8 @@ footer div{
     color: #8082df;
 }
 .title{
-    color: #5f1854;
+    color: #8082df;
+    font-size: 24pt;
 }
 .bienvenida{
     display: flex;
