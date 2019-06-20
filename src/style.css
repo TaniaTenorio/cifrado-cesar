@@ -8,6 +8,7 @@ body{
     font-family: "Quantico", sans-serif;
 }
 .bienvenida{
+    font-family: 'Share Tech Mono', monospace;
     width: 45%;
     margin:0;
     padding:0 15px;
@@ -16,6 +17,7 @@ body{
 .title{
 font-size: 2em;
 font-weight: bold;
+text-align: center;
 }
 .solucion{
     font-size: 1.25em;
@@ -69,11 +71,12 @@ font-weight: bold;
 }
 /* INSTRUCCIONES*/
 .instrucciones{
+    font-family: 'Share Tech Mono', monospace;
     width: 450px;
     border: 2px solid #f7f7f7;
     padding: 30px;
     margin: 30px;
-    text-align: justify;
+    text-align: left;
     font-size: 100%;
     margin: auto;
    
