@@ -32,7 +32,9 @@ Cada código representa un número específico que indicará el número de salto
 
 Es IMPORTANTE que el usuario utilice el mismo código con el que cifró cuando quiera descifrar sus contraseñas.
 
+**Futuros alcances**
 
+Desarrollar un app movil que permita al usuario cifrar sus contraseñas y guardarlas ya cifradas y en la misma app pueda descifrarlas para poder acceder a ellas. La contraseña descifrada no se guardará por cuestiones de seguridad.
 
 
 Para acceder a esta app ingresa al siguiente link:
