@@ -4,41 +4,82 @@
   <head>
     <meta charset="utf-8">
     <title >Contraseña Segura</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Quantico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding|Orbitron&display=swap" rel="stylesheet">  
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding|Orbitron&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
 <body>
-    <header>Contraseña Segura</header>
-        <h1 class="titulo" >Cifrando...</h1>
-    <div class="text-box">
-        <p>
-            <label for="">Escribe tu contraseña:</label>
-            <input type="text" name="contraseña" id="contraseña" placeholder="Aqui mero!" class="input-contraseña">
-        </p>
-        <p class="codigo">Código:</p>
-            <select name="codigo" id="codigo">
-                <option value="seleccionar" readonly>-Seleccionar-</option>
-                <option value="4">Mexa</option>
-                <option value="8">ADN</option>
-                <option value="16">Godín</option>
-                <option value="32">Halcón</option>
-                <option value="64">UltraSecreto</option>
-            </select>  
-        <p class="cifrar">
-            <input type="button" value="CIFRAR" class="cifrar-button" id="cifrar-button"> 
-        </p>
-        <p>Tu nueva contraseña es:</p>
-        <p id="contraseña-cifrada" class="resultado"></p>
-    </div>
-    <div class="regresar">
-            <a href="instrucciones.html"><input type="button" value="REGRESAR" class="regresar-button"> </a>
-    </div>
-    <footer>
-        <div>Hecho con amor.</div>
-        <div>En Laboratoria</div>
-    </footer>
+    <main class="hero is-dark is-fullheight grid">
+        <section class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title is-size-1 ">
+              Contraseña Segura
+            </h1>
+            <h2 class="subtitle is-size-3 has-text-danger">
+             Cifrando...
+            </h2>
+            <section class="box has-background-grey-dark has-text-justified">
+              <section class="content has-text-white is-size-5" >
+                <div class="field">
+                    <label class="label has-text-white">Escribe tu contraseña:</label>
+                    <div class="control">
+                        <input class="input is-focused" type="text" name="text2cipher" id="text2cipher" placeholder="Aqui mero!" autofocus>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label has-text-white">Elige tu código:</label>
+                    <div class="control has-icons-left">
+                        <div class="select is-danger">
+                            <select name="code" id="code">
+                                <option readonly>Código:</option>
+                                <option value="4">Mexa</option>
+                                <option value="8">ADN</option>
+                                <option value="16">Godín</option>
+                                <option value="32">Halcón</option>
+                                <option value="64">UltraSecreto</option>
+                            </select>
+                        </div>
+                        <div class="icon is-small is-left">
+                            <i class="fas fa-key"></i>
+                        </div>
+                    </div>
+                </div>
+                <section class="section control">
+                    <button class="button is-danger" id="cipher-button">
+                        <span class="icon is-small">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                        <span>CIFRAR</span>
+                    </button>
+                </section>
+                <p class="label has-text-white">Tu nueva contraseña es:</p>
+                <p id="new-password" class="has-text-danger"></p>
+            </section>
+            </section>
+            <section class="section">
+                <a class="button is-link is-large" href="instrucciones.html">Regresar</a>
+            </section>
+          </div>
+        </section>
+        <footer class="hero-foot is-size-4 is-dark">
+                <div class="content has-text-centered">
+                  <p class="has-text-warning">
+                      <span class="icon">
+                        <i class="fas fa-heart"></i>
+                      </span>
+                        Hecho con amor en Laboratoria
+                      <span class="icon">
+                        <i class="fas fa-heart"></i>
+                      </span>
+                  </p>
+                </div>
+        </footer>
+    </main>
+    
+
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
 </body>

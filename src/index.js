@@ -1,20 +1,24 @@
-let password1 = document.getElementById("contraseña");
-let codigo1 = document.getElementById("codigo");
-let newPassword = document.getElementById("contraseña-cifrada");
-let cifrar = document.getElementById("cifrar-button");
+let text2cipher = document.getElementById("text2cipher");
+let code = document.getElementById("code");
+let newPassword = document.getElementById("new-password");
+let cipherBtn = document.getElementById("cipher-button"); 
+let codedPassword1 = document.getElementById("contraseña-cifrada");
+let codigo22 = document.getElementById("codigo2");
+let decipherBtn = document.getElementById("decipher-button");
+let newCodedPassword = document.getElementById("contraseña-descifrada");
 
-// console.log(password);
-// const showNewPassword = () => {
-    // };  
-    cifrar.addEventListener("click", () => {
-       let password=password1.value;
-        let codigo=codigo1.value;
-        // console.log(password)
-        // console.log(codigo);
-        // newPassword = newPassword.value
-        // console.log(newPassword); 
-        let codedPassword = window.cipher.encode(codigo,password); 
-        // console.log(codedPassword);
-        newPassword.innerHTML = codedPassword;
-});
-//     
+const cipherText = () => {
+    let password = text2cipher.value;
+    let code2cipher = code.value; 
+    let codedPassword = window.cipher.encode(code2cipher,password); 
+    newPassword.innerHTML = codedPassword;
+};
+cipherBtn.addEventListener("click", cipherText);
+
+const decipherText = () => {
+    let codedPassword = codedPassword1.value;
+    let codigo2=codigo22.value;
+    let decodedPassword = window.cipher.decode(codigo2,codedPassword)
+    newCodedPassword.innerHTML = decodedPassword; 
+}
+decipherBtn.addEventListener("click", decipherText);
